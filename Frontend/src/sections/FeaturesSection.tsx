@@ -51,7 +51,7 @@ export default function FeaturesSection() {
                         viewport={{ once: true }}
                         transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
                     >
-                        <img className="h-full w-auto" src="/pixels-reactjs/assets/features-showcase-1.png" alt="features showcase" width={1000} height={500} />
+                        <img className="h-full w-auto" src="/assets/features-showcase-1.png" alt="features showcase" width={1000} height={500} />
                     </motion.div>
                     <motion.div className="md:col-span-1"
                         initial={{ y: 150, opacity: 0 }}
@@ -59,7 +59,7 @@ export default function FeaturesSection() {
                         viewport={{ once: true }}
                         transition={{ delay: 0.15, type: "spring", stiffness: 320, damping: 70, mass: 1 }}
                     >
-                        <img src="/pixels-reactjs/assets/features-showcase-2.png" alt="features showcase" width={1000} height={500} className="hover:-translate-y-0.5 transition duration-300" />
+                        <img src="/assets/features-showcase-2.png" alt="features showcase" width={1000} height={500} className="hover:-translate-y-0.5 transition duration-300" />
                         <h3 className="text-[24px]/7.5 text-slate-300 font-medium mt-6">Turn Forgotten Dues into On-Time Payments</h3>
                         <p className="text-slate-300 mt-2">Small businesses lose money because follow-ups are manual and inconsistent. Your AI assistant works like a digital staff member—tracking dues, engaging customers, and keeping your cash flow healthy.</p>
                         <a href="#!" className="group flex items-center gap-2 mt-4 text-teal-400 hover:text-teal-500 transition">
