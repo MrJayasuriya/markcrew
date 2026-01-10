@@ -1,14 +1,7 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
-  base: '/pixels-reactjs/',
-  server: {
-    allowedHosts: [
-      'b5ccf5f869f4.ngrok-free.app'
-    ]
-  }
-})
+  base: "/pixels-reactjs/",
+  plugins: [react()],
+});
