@@ -1,1 +1,1 @@
-export const basePath = '/pixels-reactjs';
+export const basePath = '/';
