@@ -55,10 +55,10 @@ export default function HeroSection() {
                 >
                     Join Early Access – Free for 3 Months
                 </button>
-                <button className="flex justify-center items-center gap-2 border border-blue-800 hover:bg-blue-900/30 text-gray-300 transition rounded-full px-6 h-11 w-full md:w-auto">
+                <a href="https://calendly.com/jayasuriyathedatascientist/30min" target="_blank" rel="noopener noreferrer" className="flex justify-center items-center gap-2 border border-blue-800 hover:bg-blue-900/30 text-gray-300 transition rounded-full px-6 h-11 w-full md:w-auto">
                     <VideoIcon strokeWidth={1} />
                     <span>Request a Demo</span>
-                </button>
+                </a>
             </motion.div>
 
             <div className="flex flex-wrap justify-center items-center gap-4 md:gap-14 mt-12">

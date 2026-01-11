@@ -3,6 +3,7 @@ import { useState } from "react";
 import SectionTitle from "../components/SectionTitle";
 import { ArrowRightIcon, MailIcon, UserIcon, PhoneIcon } from "lucide-react";
 import { motion } from "motion/react";
+import { toast } from "sonner";
 
 export default function ContactSection() {
     const [formData, setFormData] = useState({
@@ -23,7 +24,7 @@ export default function ContactSection() {
         setStatus("loading");
 
         try {
-            const response = await fetch("http://localhost:8000/early-access", {
+            const response = await fetch("https://markcrew-backend.vercel.app/early-access", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
@@ -39,6 +40,7 @@ export default function ContactSection() {
 
             setStatus("success");
             setFormData({ name: "", email: "", mobile: "", painPoint: "", message: "" });
+            toast.success("Application Sent! We'll be in touch.");
         } catch (error) {
             console.error(error);
             setStatus("error");

@@ -5,9 +5,12 @@ import Footer from "./components/Footer";
 import "./globals.css";
 import LenisScroll from "./components/LenisScroll";
 
+import { Toaster } from "sonner";
+
 export default function App() {
     return (
         <>
+            <Toaster position="top-center" richColors />
             <LenisScroll />
             <Navbar />
             <Routes>

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://themewagon.github.io",
+  "homepage": "https://themewagon.github.io/pixels-reactjs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -21,6 +21,7 @@
     "react-dom": "^19.1.0",
     "react-fast-marquee": "^1.6.5",
     "react-router-dom": "^7.8.2",
+    "sonner": "^2.0.7",
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
