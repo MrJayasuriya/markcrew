@@ -10,8 +10,7 @@ export default function ContactSection() {
         name: "",
         email: "",
         mobile: "",
-        painPoint: "",
-        message: ""
+        painPoint: ""
     });
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
@@ -31,15 +30,14 @@ export default function ContactSection() {
                     name: formData.name,
                     email: formData.email,
                     mobile: formData.mobile,
-                    pain_point: formData.painPoint,
-                    message: formData.message
+                    pain_point: formData.painPoint
                 }),
             });
 
             if (!response.ok) throw new Error("Failed to submit");
 
             setStatus("success");
-            setFormData({ name: "", email: "", mobile: "", painPoint: "", message: "" });
+            setFormData({ name: "", email: "", mobile: "", painPoint: "" });
             toast.success("Application Sent! We'll be in touch.");
         } catch (error) {
             console.error(error);
@@ -132,22 +130,7 @@ export default function ContactSection() {
                     />
                 </motion.div>
 
-                <motion.div className='sm:col-span-2'
-                    initial={{ y: 150, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ type: "spring", stiffness: 240, damping: 70, mass: 1 }}
-                >
-                    <p className='mb-2 font-medium'>Message (Optional)</p>
-                    <textarea
-                        name='message'
-                        value={formData.message}
-                        onChange={handleChange}
-                        rows={4}
-                        placeholder='Any questions for us?'
-                        className='focus:border-teal-500 resize-none w-full p-3 outline-none rounded-lg border border-slate-700 bg-transparent placeholder-gray-500 transition-colors'
-                    />
-                </motion.div>
+
 
                 <motion.button
                     type='submit'
